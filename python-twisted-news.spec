@@ -36,3 +36,4 @@ also has very rudamentary support for moderated groups.
 %doc  LICENSE README
 %py_platsitedir/twisted/news/
 %py_platsitedir/twisted/plugins/*
+%py_platsitedir/*.egg-info
