@@ -6,7 +6,6 @@ Source0:        http://tmrc.mit.edu/mirror/twisted/News/0.3/TwistedNews-%{versio
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/news/
-BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 
