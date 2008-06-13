@@ -1,11 +1,14 @@
+%define version 8.1.0
+%define rel 1
+
 Summary:        An NNTP protocol implementation together with clients and servers
 Name:           python-twisted-news
-Version: 0.3.0
-Release: %mkrel 1
-Source0:        http://tmrc.mit.edu/mirror/twisted/News/0.3/TwistedNews-%{version}.tar.bz2
+Version: %version
+Release: %mkrel %rel
+Source0:        http://tmrc.mit.edu/mirror/twisted/News/8.1/TwistedNews-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
-URL:            http://twistedmatrix.com/projects/news/
+URL:            http://twistedmatrix.com/trac/wiki/TwistedNews
 BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
