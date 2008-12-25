@@ -1,5 +1,5 @@
 %define version 8.1.0
-%define rel 1
+%define rel 21
 
 Summary:        An NNTP protocol implementation together with clients and servers
 Name:           python-twisted-news
