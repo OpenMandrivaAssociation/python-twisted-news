@@ -1,5 +1,5 @@
-%define version 8.1.0
-%define rel 21
+%define version 8.2.0
+%define rel 1
 
 Summary:        An NNTP protocol implementation together with clients and servers
 Name:           python-twisted-news
@@ -14,11 +14,11 @@ BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 
 %description
-Twisted News provides a very basic NNTP server, as well as an NNTP client 
-protocol implementation. Two messages storage systems are supported: the 
-DB-API 2.0 backend stores and indexes messages in any compatible SQL 
-database; the Twisted dirdbm backend uses serialized Python objects 
-stored directly on the filesystem for message storage. Twisted News 
+Twisted News provides a very basic NNTP server, as well as an NNTP client
+protocol implementation. Two messages storage systems are supported: the
+DB-API 2.0 backend stores and indexes messages in any compatible SQL
+database; the Twisted dirdbm backend uses serialized Python objects
+stored directly on the filesystem for message storage. Twisted News
 also has very rudamentary support for moderated groups.
 
 %prep
