@@ -1,11 +1,12 @@
-%define version 8.2.0
+%define version 9.0.0
 %define rel 1
+%define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        An NNTP protocol implementation together with clients and servers
 Name:           python-twisted-news
 Version: %version
 Release: %mkrel %rel
-Source0:        http://tmrc.mit.edu/mirror/twisted/News/8.1/TwistedNews-%{version}.tar.bz2
+Source0:        http://tmrc.mit.edu/mirror/twisted/News/%{mainver}/TwistedNews-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedNews
