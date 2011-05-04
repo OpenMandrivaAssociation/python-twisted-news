@@ -1,6 +1,6 @@
 %define name python-twisted-news
 %define version 10.1.0
-%define rel 2
+%define rel 3
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        An NNTP protocol implementation together with clients and servers
