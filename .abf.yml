@@ -1,3 +1,5 @@
-sources:
-  "TwistedNews-10.1.0.tar.bz2": 4832775332cee5e62fb166be64cb5ab5241eac70
+removed_sources:
+  TwistedNews-10.1.0.tar.bz2: 4832775332cee5e62fb166be64cb5ab5241eac70
   TwistedNews-12.2.0.tar.bz2: db7687e8a1cc2ae32dd022f925c098189f868b64
+sources:
+  TwistedNews-13.0.0.tar.bz2: 13fd1c4e3016ae107960d1a35eb16492eb6acf13

@@ -7,9 +7,9 @@
 
 Summary:        An NNTP protocol implementation together with clients and servers
 Name:           python-twisted-news
-Version:	12.2.0
+Version:	13.0.0
 Release:	1
-Source0:        http://tmrc.mit.edu/mirror/twisted/News/%{mainver}/TwistedNews-%{version}.tar.bz2
+Source0:        http://twistedmatrix.com/Releases/News/13.0/TwistedNews-13.0.0.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedNews
