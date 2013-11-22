@@ -5,27 +5,28 @@
 # should be located in the same place
 %define debug_package %{nil}
 
-Summary:        An NNTP protocol implementation together with clients and servers
-Name:           python-twisted-news
+Summary:	An NNTP protocol implementation together with clients and servers
+Name:		python-twisted-news
 Version:	13.0.0
 Release:	1
-Source0:        http://twistedmatrix.com/Releases/News/13.0/TwistedNews-13.0.0.tar.bz2
-License:        MIT
-Group:          Development/Python
-URL:            http://twistedmatrix.com/trac/wiki/TwistedNews
-BuildRequires:	python-devel python-twisted-core
-Requires:       python-twisted-core
+License:	MIT
+Group:		Development/Python
+Url:		http://twistedmatrix.com/trac/wiki/TwistedNews
+Source0:	http://twistedmatrix.com/Releases/News/13.0/TwistedNews-%{version}.tar.bz2
+BuildRequires:	python-twisted-core
+BuildRequires:	pkgconfig(python)
+Requires:	python-twisted-core
 
 %description
 Twisted News provides a very basic NNTP server, as well as an NNTP client
-protocol implementation. Two messages storage systems are supported: the
+protocol implementation. Two messages storage systems are supported:	the
 DB-API 2.0 backend stores and indexes messages in any compatible SQL
 database; the Twisted dirdbm backend uses serialized Python objects
 stored directly on the filesystem for message storage. Twisted News
 also has very rudamentary support for moderated groups.
 
 %prep
-%setup -q -n TwistedNews-%{version}
+%setup -qn TwistedNews-%{version}
 
 %build
 %__python setup.py build
@@ -36,7 +37,8 @@ also has very rudamentary support for moderated groups.
 %files
 %defattr(0644,root,root,0755)
 %doc  LICENSE README
-%dir %py_platsitedir/twisted/news/
-%py_platsitedir/twisted/news/*
-%py_platsitedir/twisted/plugins/*
-%py_platsitedir/*.egg-info
+%dir %{py_platsitedir}/twisted/news/
+%{py_platsitedir}/twisted/news/*
+%{py_platsitedir}/twisted/plugins/*
+%{py_platsitedir}/*.egg-info
+
