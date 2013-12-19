@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   TwistedNews-13.0.0.tar.bz2: 13fd1c4e3016ae107960d1a35eb16492eb6acf13
+sources:
+  TwistedNews-13.1.0.tar.bz2: 589327f43335f8f9acbd7d9d939d70487f1dbaf9
