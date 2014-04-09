@@ -6,13 +6,14 @@
 %define debug_package %{nil}
 
 Summary:	An NNTP protocol implementation together with clients and servers
+
 Name:		python-twisted-news
-Version:	13.1.0
+Version:	13.2.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedNews
-Source0:	http://twistedmatrix.com/Releases/News/13.1/TwistedNews-%{version}.tar.bz2
+Source0:	http://twistedmatrix.com/Releases/News/13.2/TwistedNews-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
 Requires:	python-twisted-core
@@ -41,5 +42,6 @@ also has very rudamentary support for moderated groups.
 %{py_platsitedir}/twisted/news/*
 %{py_platsitedir}/twisted/plugins/*
 %{py_platsitedir}/*.egg-info
+
 
 
